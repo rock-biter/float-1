@@ -2,8 +2,37 @@ html {
   font-size: 18px;
 }
 
-.container {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px dashed red;
+}
+
+.container div {
+  background-color: aqua;
+  border: 1px solid;
+  padding: 20px;
+}
+
+.container div {
+  float: left;
 }
 
 .fl {
@@ -14,5 +43,75 @@ html {
   float: right;
 }
 
+.cl {
+  clear: left;
+}
 
+.cr {
+  clear: right;
+}
+
+.cb {
+  clear: both;
+}
+
+
+p {
+  color: white;
+  padding: 5px;
+  background: #000;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 20px;
+}
+
+img {
+  display: block;
+}
+
+/* .row {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.col {
+  float: left;
+}
+
+.col.sidebar {
+  width: 250px;
+}
+
+.col.content {
+  width: calc(100% - 250px - 250px);
+} */
+
+/* debug */
+.debug header {
+  background: yellow;
+}
+
+.debug footer {
+  background-color: aquamarine;
+}
+
+.debug header, .debug footer {
+  min-height: 300px;
+}
+
+.debug .col {
+  min-height: 300px;
+}
+
+.debug .sidebar {
+  background-color: darksalmon;
+}
+
+.debug .content {
+  background-color: purple;
+}
 
