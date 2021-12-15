@@ -62,18 +62,11 @@ p {
   background: #000;
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-    height: 20px;
-}
-
 img {
   display: block;
 }
 
-/* .row {
+.row {
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -88,7 +81,7 @@ img {
 
 .col.content {
   width: calc(100% - 250px - 250px);
-} */
+}
 
 /* debug */
 .debug header {
